@@ -1,4 +1,3 @@
-tap "Valkyrie00/homebrew-bbrew"
 brew "atuin"
 brew "bat"
 brew "bash-preexec"

@@ -1,10 +1,15 @@
 <p align="center">
-  <img src="/repo_content/Bazzite_Tagline.svg?raw=true" alt="Bazzite"/>
+  <a href="https://bazzite.gg/">
+    <picture>
+      <source srcset="repo_content/Bazzite_Light.svg" media="(prefers-color-scheme: dark)">
+      <img src="repo_content/Bazzite.svg" alt="Bazzite"/>
+    </picture>
+  </a>
 </p>
 
 [![build-bazzite](https://github.com/ublue-os/bazzite/actions/workflows/build.yml/badge.svg)](https://github.com/ublue-os/bazzite/actions/workflows/build.yml)
 
-# [🇺🇸](https://github.com/ublue-os/bazzite/blob/main/README.md) [🇪🇸](https://github.com/ublue-os/bazzite/blob/main/README-SPA.md) [🇮🇩](https://github.com/ublue-os/bazzite/blob/main/README-ID.md) [🇫🇷](https://github.com/ublue-os/bazzite/blob/main/README-FR.md) [🇧🇷](https://github.com/ublue-os/bazzite/blob/main/README-BR.md) [🇳🇱](https://github.com/ublue-os/bazzite/blob/main/README-NL.md)
+# [🇺🇸](https://github.com/ublue-os/bazzite/blob/main/README.md) [🇪🇸](https://github.com/ublue-os/bazzite/blob/main/README-SPA.md) [🇮🇩](https://github.com/ublue-os/bazzite/blob/main/README-ID.md) [🇫🇷](https://github.com/ublue-os/bazzite/blob/main/README-FR.md) [🇧🇷](https://github.com/ublue-os/bazzite/blob/main/README-BR.md) [🇳🇱](https://github.com/ublue-os/bazzite/blob/main/README-NL.md) [🇹🇼](https://github.com/ublue-os/bazzite/blob/main/README-ZH-TW.md)
 
 
 <p align="center">
@@ -14,7 +19,7 @@
 ---
 
 # Daftar Isi
-- [🇺🇸 🇪🇸 🇮🇩 🇫🇷 🇧🇷 🇳🇱](#-----)
+- [🇺🇸 🇪🇸 🇮🇩 🇫🇷 🇧🇷 🇳🇱 🇹🇼](#------)
 - [Daftar Isi](#daftar-isi)
   - [Tentang \& Fitur](#tentang--fitur)
     - [Desktop](#desktop)
@@ -28,7 +33,7 @@
   - [Dokumentasi \& Buletin](#dokumentasi--buletin)
   - [Verifikasi](#verifikasi)
   - [Secure Boot](#secure-boot)
-    - [Metrik Kontribusi](#metrik-kontribusi)
+  - [Metrik Kontribusi](#metrik-kontribusi)
   - [Ucapan Terimakasih](#ucapan-terimakasih)
   - [Membuat Image Anda Sendiri](#membuat-image-anda-sendiri)
   - [Bergabung Dengan Komunitas](#bergabung-dengan-komunitas)
@@ -45,10 +50,9 @@ Bazzite dibentuk dari [ublue-os/main](https://github.com/ublue-os/main) and [ubl
 - Dukungan penuh untuk [DisplayLink](https://www.synaptics.com/products/displaylink-graphics).
 - Menyertakan Tema KDE Valve dari SteamOS.
 - [LatencyFleX](https://github.com/ishitatsuyuki/LatencyFleX), [vkBasalt](https://github.com/DadSchoorse/vkBasalt), [MangoHud](https://github.com/flightlessmango/Mangohud), dan [OBS VkCapture](https://github.com/nowrep/obs-vkcapture) terinstall dan tersedia secara bawaan.
-- Dukungan untuk [Wallpaper Engine](https://www.wallpaperengine.io/en). <sub><sup>(Hanya ada di KDE)</sup></sub>
 - Disediakan [Ekstensi shell untuk ROM Properties Page ](https://github.com/GerbilSoft/rom-properties).
 - Dukungan penuh untuk [Winesync/Fastsync/NTsync](https://github.com/Frogging-Family/wine-tkg-git/issues/936).
-- Pra-install [Distrobox](https://github.com/89luca89/distrobox) dengan update otomatis untuk kontainer yang dibuat.
+- Pra-install [Distrobox](https://github.com/89luca89/distrobox).
 - Otomatisasi layanan `duperemove` dan `rmlint`untuk mengurangi penggunaan penyimpanan yang digunakan prefix wine.
 - Dukungan untuk HDMI CEC dengan [libCEC](https://libcec.pulse-eight.com/).
 - Pra-install [System76-Scheduler](https://github.com/pop-os/system76-scheduler), menyediakan otomatisasi dan oprekan untuk proses yang berjalan dilatar belakang, serta meminimalkan CPU untuk proses latar belakang.
@@ -56,7 +60,6 @@ Bazzite dibentuk dari [ublue-os/main](https://github.com/ublue-os/main) and [ubl
 - Menggunakan [Google's BBR TCP congestion control](https://github.com/google/bbr) secara bawaan.
 - Pra-install [Input Remapper](https://github.com/sezanzeb/input-remapper) dan diaktifkan secara bawaan. <sub><sup>(Dinonaktifkan secara bawaan di varian Deck tapi tersedia dan dapat diaktifkan dengan `ujust _restore-input-remapper`)</sup></sub>
 - Portal Bazzite menyediakan cara mudah untuk menginstall berbagai macam aplikasi dan oprekan, termasuk menginstall [LACT](https://github.com/ilya-zlobintsev/LACT) dan [GreenWithEnvy](https://gitlab.com/leinardi/gwe).
-- Manajemen paket [Nix](https://nixos.org/) dengan [Fleek](https://getfleek.dev/) tersedia secara optional dan dapat diinstall dengan `ujust`.
 - Manajemen paket [Brew](https://brew.sh/) tersedia secara optional dan dapat diinstall dengan Portal Bazzite.
 - Pra-install [Waydroid](https://waydro.id/) untuk menjalankan aplikasi Android. Dapat diatur dengan mengikuti [panduan cepat](https://universal-blue.discourse.group/docs?topic=32).
 - Mengatur aplikasi dengan [Flatseal](https://github.com/tchx84/Flatseal), [Warehouse](https://github.com/flattool/warehouse), dan [Gear Lever](https://github.com/mijorus/gearlever).
@@ -73,7 +76,8 @@ Bazzite dibentuk dari [ublue-os/main](https://github.com/ublue-os/main) and [ubl
 ### Desktop
 
 Varian umum yang tersedia sebagai `bazzite`, cocok untuk komputer desktop.
-- Pembaruan otomatis untuk Sistem Operasi,Flatpak,Nix package <sup><sub>(dengan Fleek)</sub></sup>, dan semua kontainer Distrobox.
+
+- Pembaruan otomatis untuk Sistem Operasi,Flatpak, dan lainnya.
 
 > [!IMPORTANT]
 > **ISO bisa diunduh dari halaman rilis kami [disini](https://github.com/ublue-os/bazzite/releases), dan berbagai macam panduan instalasi dapat ditemukan [disini](https://universal-blue.discourse.group/docs?topic=30).**
@@ -109,7 +113,7 @@ Varian `bazzite-deck` ini didesain untuk digunakan sebagai alternatif untuk Stea
 - Hadir dengan patch dari [SteamOS BTRFS](https://gitlab.com/popsulfr/steamos-btrfs) untuk dukungan BTRFS di SD Card secara bawaan.
 - [SDGyroDSU](https://github.com/kmicki/SteamDeckGyroDSU) tersedia dan diaktifkan secara bawaan.
 - Pilihan untuk menginstall [Decky Loader](https://github.com/SteamDeckHomebrew/decky-loader), [EmuDeck](https://www.emudeck.com/), [RetroDECK](https://retrodeck.net/), dan [ProtonUp-Qt](https://davidotek.github.io/protonup-qt/), serta berbagai macam paket/aplikasi yang berguna selama pemasangan.
-- Sistem pembaruan kustom memungkinkan Sistem Operasi,Flatpak,Paket Nix<sup><sub>(dengan fleek)</sub></sup>, dan Distrobox image untuk diupdate dari Gamemode UI.
+- Sistem pembaruan kustom memungkinkan Sistem Operasi,Flatpak, dan lainnya untuk diupdate dari Gamemode UI.
 - Dukungan untuk dual-boot dengan Windows karena GRUB dari Fedora.
 - Pembaruan merusak sesuatu? tinggal rollback ke versi sebelumnya berkat fitur rollback `rpm-ostree`. Anda bisa memilih versi image sebelumnya di boot menu.
 - Pra-install Steam dan Lutris sebagai paket sistem.
@@ -120,7 +124,6 @@ Varian `bazzite-deck` ini didesain untuk digunakan sebagai alternatif untuk Stea
 - Kalibrasi Warna Layar untuk layar matte dan reflektif Steam Deck.
 - Fitur-fitur pengguna advance yang tidak diaktifkan secara bawaan seperti:
     - Service untuk undervolting Steam Deck yang beresiko rendah dengan [RyzenAdj](https://github.com/FlyGoat/RyzenAdj) dan [Ryzen SMU](https://gitlab.com/leogx9r/ryzen_smu), anda bisa mengecek `ryzenadj.service` dan `/etc/default/ryzenadj`.
-    - Service untuk membatasi kapasitas maksimal saat mengisi ulang, anda bisa mengeceknya di `batterylimit.service` dan `/etc/default/batterylimit`. <sup><sub>(Bekerja walaupun perangkat dalam posisi non aktif)</sub></sup>
     - Dukungan bawaan untuk overclocking layar. Contohnya seperti ini, anda menambahkan `GAMESCOPE_OVERRIDE_REFRESH_RATE=40,70` di `/etc/environment`.
     - Anda bisa menggunakan X11 jika diperlukan dengan mengedit `/etc/default/desktop-wayland`.
     - Lu punya RAM 32 GB? anda bisa memakai 2x lipat VRAM yang diaplikasikan secara otomatis!. <sup><sub>(Coba bagikan skill ngesolder lu dong)</sub></sup>
@@ -210,11 +213,11 @@ Baca [FAQ](https://universal-blue.discourse.group/docs?topic=33) untuk tahu apa 
 
 ![KDE Vapor Theme](/repo_content/desktop1.png?raw=true "KDE Vapor Theme")
 ![KDE VGUI2 Theme](/repo_content/desktop2.png?raw=true "KDE VGUI2 Theme")
-![Steam Game Mode](/repo_content/gamemode.png?raw=true "Steam Game Mode")
+![Steam Gaming Mode](/repo_content/gamemode.png?raw=true "Steam Gaming Mode")
 ![Waydroid](/repo_content/waydroid.png?raw=true "Waydroid")
 ![Distrobox Terminals](/repo_content/distrobox.png?raw=true "Distrobox Terminals")
-![GNOME Vapor Theme](/repo_content/gnome1.png?raw=true "GNOME Vapor Theme")
-![GNOME VGUI2 Theme](/repo_content/gnome2.png?raw=true "GNOME VGUI2 Theme")
+![GNOME](/repo_content/gnome1.png?raw=true "GNOME")
+![GNOME](/repo_content/gnome2.png?raw=true "GNOME")
 
 ## Dokumentasi & Buletin
 
@@ -229,7 +232,7 @@ Cek [buletin](https://universal-blue.discourse.group/tag/bazzite-buzz) kami yang
 
 ## Verifikasi
 
-Image berikut ini telah disigned oleh sigstore's [cosign](https://docs.sigstore.dev/cosign/overview/). Anda bisa menverifikasi signature dengan mengunduh key `cosign.pub` dari repo ini dan menjalankan perintah ini:
+Image berikut ini telah disigned oleh sigstore's [cosign](https://docs.sigstore.dev/cosign/signing/overview/). Anda bisa menverifikasi signature dengan mengunduh key `cosign.pub` dari repo ini dan menjalankan perintah ini:
 
 ```bash
 cosign verify --key cosign.pub ghcr.io/ublue-os/bazzite
@@ -245,7 +248,7 @@ sudo mokutil --timeout -1
 sudo mokutil --import secure_boot.der
 ```
 
-### Metrik Kontribusi
+## Metrik Kontribusi
 
 ![Bazzite](https://repobeats.axiom.co/api/embed/86b500d79c613015ad16f56df76c8e13f3fd98ae.svg "Repobeats analytics image")
 
@@ -266,7 +269,7 @@ Bazzite merupakan upaya dari komunitas dan tidak akan pernah ada tanpa dukungan 
 Bazzite dibuat secara penuh di Github dan membuat versi anda sendiri sangat mudah, anda hanya perlu menfork repositori ini, menambahkan private sigining key, dan mengaktifkan Github actions.
 
 
-[Membiasakan anda sendiri dengan](https://docs.github.com/en/actions/security-guides/encrypted-secrets) untuk menyimpan secret di Github. Anda perlu membuat [keypair baru](https://docs.sigstore.dev/cosign/overview/) dengan cosign. Public key bisa anda teruh di repo publik anda. <sub><sup>(Pengguna anda perlu ini untuk mencek signature)</sup></sub>, dan anda bisa mempaste Secret key di  `Settings -> Secrets -> Actions` dengan nama `SIGNING_SECRET`.
+[Membiasakan anda sendiri dengan](https://docs.github.com/en/actions/security-guides/encrypted-secrets) untuk menyimpan secret di Github. Anda perlu membuat [keypair baru](https://docs.sigstore.dev/cosign/signing/overview/) dengan cosign. Public key bisa anda teruh di repo publik anda. <sub><sup>(Pengguna anda perlu ini untuk mencek signature)</sup></sub>, dan anda bisa mempaste Secret key di  `Settings -> Secrets -> Actions` dengan nama `SIGNING_SECRET`.
 
 Kami juga membawakan konfigurasi untuk [pull app](https://github.com/apps/pull) jika anda ingin fork anda selalu up to date dengan upstream. Aktifkan ini di repo anda untuk melacak perubahan dari Bazzite ketika anda membuat modifikasi anda sendiri.
 
